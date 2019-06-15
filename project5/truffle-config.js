@@ -23,11 +23,9 @@
  */
 
  const HDWalletProvider = require('truffle-hdwallet-provider');
- const tokenKey = "db7451a1b68e40cfa9e90871358a64b6";
 
  const mnemonic = "enjoy timber cross tank hockey among divide worry strategy wish faith magnet";
- //const mnemonic = "goddess bacon riot invite marble estate recipe action immense trouble misery life";
-// const mnemonic = "b914dc9c7c904d038f7590f66b8ea300";
+
 module.exports = {
   /**
    * Networks define how you connect to your ethereum client and let you set the
