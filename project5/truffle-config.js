@@ -22,11 +22,12 @@
  *
  */
 
- const HDWallet = require('truffle-hdwallet-provider');
+ const HDWalletProvider = require('truffle-hdwallet-provider');
  const tokenKey = "db7451a1b68e40cfa9e90871358a64b6";
 
- const mnemonic = "orange apple banana";
-
+ const mnemonic = "enjoy timber cross tank hockey among divide worry strategy wish faith magnet";
+ //const mnemonic = "goddess bacon riot invite marble estate recipe action immense trouble misery life";
+// const mnemonic = "b914dc9c7c904d038f7590f66b8ea300";
 module.exports = {
   /**
    * Networks define how you connect to your ethereum client and let you set the
@@ -52,11 +53,10 @@ module.exports = {
     },
 	
 	rinkeby: {
-		host: "localhost",
 		provider: function() {
-		return new HDWalletProvider( mnemonic, "https://rinkeby.infura.io/v3/" + tokenKey);
+		return new HDWalletProvider( mnemonic, "rinkeby.infura.io/v3/db7451a1b68e40cfa9e90871358a64b6");
 		},
-		network_id:4, 
+		network_id:1, 
 		gas : 6700000, 
 		gasPrice : 10000000000
 	},
